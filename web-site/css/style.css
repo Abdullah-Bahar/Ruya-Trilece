@@ -63,10 +63,6 @@ h6,
     transition: .5s;
 }
 
-/* .btn.btn-primary {
-    color: #FFFFFF;
-} */
-
 .btn-square {
     width: 38px;
     height: 38px;
@@ -319,7 +315,11 @@ h6,
     color: var(--light);
 }
 
-.product-item:hover .border-primary {
+.product-item .product-border-price {
+	border-color: var(--logo-red) !important;
+}
+
+.product-item:hover .product-border-price {
     border-color: var(--light) !important;
 }
 
@@ -368,7 +368,7 @@ h6,
 }
 
 
-/*** Team ***/
+/*** Order ***/
 .team-item .team-text {
     position: relative;
     height: 100px;
@@ -402,17 +402,93 @@ h6,
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--primary);
     transition: .5s;
 }
 
-.team-item .team-social .btn {
+.team-item .btn {
     margin: 0 3px;
 }
 
 .team-item:hover .team-social {
     top: 0;
 }
+
+.order-top {
+	background-color: var(--logo-red);
+}
+
+.order-top .order-top-text {
+	color: var(--logo-blue);
+}
+
+.order-top .order-top-header {
+	color: var(--light);
+}
+
+.online-order-logo {
+    width: 100%;
+    height: 300px;         
+    object-fit: contain;   
+    background-color: white; 
+    padding: 20px;         
+}
+
+.online-order-conteiner .trendyol-logo {
+	background-color: #EC691F;
+}
+
+.online-order-conteiner .yemeksepeti-logo {
+	background-color: #D51317;
+}
+
+.online-order-conteiner .custom-order-link {
+	color: var(--light);
+}
+
+/* Her hangi bir yön olmadan karartma efekti */
+.team-item .logo-wrapper {
+	overflow: hidden;
+    position: relative;
+}
+
+.logo-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0; /* Yerinde sabit */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    opacity: 0; /* Başlangıçta görünmez */
+    transition: opacity 0.5s ease; /* Yavaşça görünür */
+    z-index: 2;
+}
+
+.team-item:hover .logo-wrapper::after {
+    opacity: 1; /* Hover ile opaklaşır */
+}
+
+/* Kaydırma efekti ile karartma*/
+/* .team-item .logo-wrapper {
+	overflow: hidden;
+    position: relative;
+}
+.logo-wrapper::after {
+    content: "";
+    position: absolute;
+    top: -100%; 
+	top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: top 0.5s ease;
+    z-index: 2;
+}
+
+.team-item:hover .logo-wrapper::after {
+    top: 0;
+} */
 
 
 /*** Testimonial ***/
