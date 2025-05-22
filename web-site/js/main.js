@@ -89,6 +89,41 @@
         }
     });
 
-    
-})(jQuery);
 
+	// Shops map change
+    $(document).ready(function () {
+        var currentMap = ""; // Aynı harita tekrar yüklenmesin
+
+        // Sayfa ilk yüklendiğinde haritayı ayarla
+        updateMapFromCenteredCard();
+
+        // Carousel geçişi tamamlandığında haritayı güncelle
+        $('.testimonial-carousel').on('translated.owl.carousel', function () {
+            updateMapFromCenteredCard();
+        });
+
+        function updateMapFromCenteredCard() {
+            var $centerItem = $('.testimonial-carousel .owl-item.center .branch-cart');
+
+            if ($centerItem.length) {
+                var mapSrc = $centerItem.attr('data-map');
+
+                if (mapSrc !== currentMap) {
+                    currentMap = mapSrc;
+
+                    // Haritayı karart (fadeOut). Tamamen gizlendikten sonra (display: none), geri aramayı yürüt.
+                    $('#map-frame').fadeOut(0, function () {
+                        var $iframe = $(this);
+                        // Eski içeriğin yanıp sönmesini önlemek için hemen about:blank olarak ayarla.
+                        $iframe.attr('src', 'about:blank'); 
+                        // Yeni harita src'sini ayarla.
+                        $iframe.attr('src', mapSrc); 
+                        // Yeni haritayı görünür yap (fadeIn).
+                        $iframe.fadeIn(0); 
+                    });
+                }
+            }
+        }
+    });
+
+})(jQuery);
