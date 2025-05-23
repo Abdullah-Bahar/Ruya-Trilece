@@ -126,4 +126,69 @@
         }
     });
 
+
+	// Navbar avtive, hover
+	$(document).ready(function() {
+	    // Sayfadaki tüm bölüm ID'lerini ve navbar linklerini alalım
+	    var sections = $('section, div[id]'); // Sayfanızdaki tüm bölümleri seçin (section veya id'si olan divler)
+	    var navLinks = $('.navbar .navbar-nav .nav-link');
+
+	    // Pencere kaydırma olayını dinle
+	    $(window).on('scroll', function() {
+	        var currentScrollPos = $(window).scrollTop(); // Mevcut kaydırma pozisyonu
+
+	        sections.each(function() {
+	            var sectionTop = $(this).offset().top - 100; // Bölümün sayfanın üstüne olan uzaklığı. 100px: Sabit navbar yüksekliği veya boşluk için ayar.
+	            var sectionBottom = sectionTop + $(this).outerHeight(); // Bölümün bittiği yer
+
+	            // Eğer mevcut kaydırma pozisyonu bölümün içinde veya yakınındaysa
+	            if (currentScrollPos >= sectionTop && currentScrollPos < sectionBottom) {
+	                var id = $(this).attr('id'); // Bölümün ID'si
+				
+	                // Tüm navbar linklerinden 'active' sınıfını kaldır
+	                navLinks.removeClass('active');
+				
+	                // İlgili navbar linkini bul ve 'active' sınıfını ekle
+	                $('.navbar .navbar-nav .nav-link[href="#' + id + '"]').addClass('active');
+	            }
+	        });
+	    });
+
+	    // Sayfa yüklendiğinde de bir kere kontrol et (başlangıç pozisyonu için)
+	    $(window).scroll();
+
+	    // Navbar linklerine tıklandığında pürüzsüz kaydırma ve aktif sınıfı yönetimi
+	    navLinks.on('click', function(e) {
+	        // e.preventDefault(); // Eğer kaydırma animasyonu yapacaksanız bunu aktif edin
+
+	        navLinks.removeClass('active'); // Tüm aktifleri kaldır
+	        $(this).addClass('active'); // Tıklananı aktif yap
+		
+	        // Eğer kaydırma animasyonu istiyorsanız, aşağıdaki satırı kullanabilirsiniz
+	        // var target = $(this).attr('href');
+	        // $('html, body').animate({
+	        //     scrollTop: $(target).offset().top - 80 // Navbar yüksekliğine göre ayarlayın
+	        // }, 500);
+	    });
+	});
+
+
+	// Sayfa Yenileme
+	$(document).ready(function() {
+	    // Sayfanın en üstüne kaydır
+	    window.scrollTo(0, 0);
+
+	    // Veya daha modern bir yaklaşımla (smooth animasyon olmadan):
+	    // window.scroll({
+	    //     top: 0,
+	    //     left: 0,
+	    //     behavior: 'auto' // 'smooth' yerine 'auto' kullanarak anında kaydırma sağlar
+	    // });
+
+	    // Daha önceki kodlarınız (aktif navbar, yapışkan navbar vb.) buraya devam edebilir:
+	    // Örneğin, aktif link belirleme veya yapışkan navbar kontrolü gibi kodlarınız buradaysa,
+	    // window.scrollTo(0, 0); satırını onların başına eklemeniz yeterlidir.
+	    // ...
+	});
+
 })(jQuery);
