@@ -250,7 +250,6 @@ h6,
 	color: var(--light);
 }
 
-.header-carousel .btn-header-carousel:focus,
 .header-carousel .btn-header-carousel:hover {
 	color: rgba(253, 245, 235, 0.7);
 	/* background-color: rgba(255, 255, 255, 0.6); */
@@ -267,6 +266,10 @@ h6,
     margin-top: -10px;
     background: #FFFFFF !important;
     box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+}
+
+.fact-item .fact-item-icon {
+	color: var(--logo-red);
 }
 
 
@@ -367,6 +370,21 @@ h6,
 
 .container-product .product-item a:hover i {
 	color: var(--logo-red);
+}
+
+
+/*** Service ***/
+.service .top-text {
+	color: var(--logo-blue);
+}
+
+.service .service-icon {
+	background-color: var(--logo-red);
+}
+
+.service span {
+	color: var(--logo-red);
+	font-size: 18px;
 }
 
 
