@@ -41,22 +41,11 @@
 
     <!-- Topbar Start -->
     <div class="container-fluid top-bar bg-dark text-light px-0 wow fadeIn" data-wow-delay="0.1s">
-        <div class="row gx-0 align-items-center d-none d-lg-flex">
-            <div class="col-lg-6 px-5 text-start">
-                <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a class="small text-light" href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a class="small text-light" href="#">Career</a></li>
-                    <li class="breadcrumb-item"><a class="small text-light" href="#">Terms</a></li>
-                    <li class="breadcrumb-item"><a class="small text-light" href="#">Privacy</a></li>
-                </ol>
-            </div>
+        <div class="row gx-0 justify-content-end align-items-center d-none d-lg-flex">
             <div class="col-lg-6 px-5 text-end">
-                <small>Follow us:</small>
+                <small>Bizi Takip Edin:</small>
                 <div class="h-100 d-inline-flex align-items-center">
-                    <a class="btn-lg-square text-primary border-end rounded-0" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn-lg-square text-primary border-end rounded-0" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn-lg-square text-primary border-end rounded-0" href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn-lg-square text-primary pe-0" href=""><i class="fab fa-instagram"></i></a>
+                    <a class="btn-lg-square pe-0" href="https://www.instagram.com/ruya.trilece/"><i class="fab fa-instagram btn-lg-square-topbar"></i></a>
                 </div>
             </div>
         </div>
@@ -66,35 +55,30 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-            <h1 class="text-primary m-0">Baker</h1>
+		<a href="index.html" class="navbar-logo ms-4 ms-lg-0">
+		    <img src="img/logo.png" alt="Logo" class="navbar-logo-img">
+		</a>
+		<a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+            <h1 class="logo-text m-0">Rüya <br> Trileçe</h1>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Services</a>
-                <a href="product.html" class="nav-item nav-link">Products</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu m-0">
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item active">404 Page</a>
-                    </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="#home" class="nav-item nav-link active">Ana Sayfa</a>
+                <a href="#about" class="nav-item nav-link">Hakımızda</a>
+                <a href="#product" class="nav-item nav-link">Ürünler</a>
+                <a href="#order" class="nav-item nav-link">Sipariş Ver</a>
+                <a href="#shops" class="nav-item nav-link">Şubeler</a>
             </div>
             <div class=" d-none d-lg-flex">
                 <div class="flex-shrink-0 btn-lg-square border border-light rounded-circle">
-                    <i class="fa fa-phone text-primary"></i>
+                    <i class="fa fa-phone btn-lg-square-navbar-phone-icon"></i>
                 </div>
                 <div class="ps-3">
-                    <small class="text-primary mb-0">Call Us</small>
-                    <p class="text-light fs-5 mb-0">+012 345 6789</p>
+                    <small class="btn-lg-square-navbar-phone-text mb-0">Bize Ulaşın</small>
+                    <p class="text-light fs-5 mb-0">+90 534 433 41 04</p>
                 </div>
             </div>
         </div>
@@ -105,29 +89,22 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-6 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center pt-5 pb-3">
-            <h1 class="display-4 text-white animated slideInDown mb-3">404 Page</h1>
-            <nav aria-label="breadcrumb animated slideInDown">
-                <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                    <li class="breadcrumb-item text-primary active" aria-current="page">404 Page</li>
-                </ol>
-            </nav>
+            <h1 class="display-4 text-white animated slideInDown mb-3">404 <br> Rüya'nın Dışındasınız</h1>
         </div>
     </div>
     <!-- Page Header End -->
 
 
     <!-- 404 Start -->
-    <div class="container-xxl py-6 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container-xxl py-6 wow fadeInUp Not-Found" data-wow-delay="0.1s">
         <div class="container text-center">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
-                    <i class="bi bi-exclamation-triangle display-1 text-primary"></i>
+                    <i class="bi bi-exclamation-triangle display-1 icon-404"></i>
                     <h1 class="display-1">404</h1>
-                    <h1 class="mb-4">Page Not Found</h1>
-                    <p class="mb-4">We’re sorry, the page you have looked for does not exist in our website! Maybe go to our home page or try to use a search?</p>
-                    <a class="btn btn-primary rounded-pill py-3 px-5" href="">Go Back To Home</a>
+                    <h1 class="mb-4">Sayfa Bulunamadı</h1>
+                    <p class="mb-4">Üzgünüz, aradığınız sayfa sitemizde bulunmuyor! Aradığınızı bulmak için Ana Sayfa'ya gidebilirsiniz.</p>
+                    <a class="btn btn-404 rounded-pill py-3 px-5" href="index.html#home">Ana Sayfa'ya Dön</a>
                 </div>
             </div>
         </div>
@@ -140,35 +117,32 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Office Address</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <h4 class="text-light mb-4">İletişim</h4>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <!-- <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p> -->
                     <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <!-- <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a> -->
+                        <!-- <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a> -->
+                        <!-- <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-youtube"></i></a> -->
+                        <!-- <a class="btn btn-square btn-outline-light rounded-circle me-0" href=""><i class="fab fa-linkedin-in"></i></a> -->
+                        <a class="btn btn-square btn-social-link btn-outline-light rounded-circle me-0" href="https://www.instagram.com/ruya.trilece/"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
+                    <h4 class="text-light mb-4">Hızlı Menü</h4>
+                    <a class="btn btn-link" href="">Ana Sayfa</a>
+                    <a class="btn btn-link" href="">Hakkımızda</a>
+                    <a class="btn btn-link" href="">Ürünler</a>
+                    <a class="btn btn-link" href="">Sipariş Ver</a>
+                    <a class="btn btn-link" href="">Şubeler</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
+                    <h4 class="text-light mb-4">Ürünler</h4>
+                    <a class="btn btn-link" href="">Karamelli Trileçe</a>
+                    <a class="btn btn-link" href="">Franbuazlı Trileçe</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Photo Gallery</h4>
+                    <h4 class="text-light mb-4">Fotoğraf Galerisi</h4>
                     <div class="row g-2">
                         <div class="col-4">
                             <img class="img-fluid bg-light rounded p-1" src="img/product-1.jpg" alt="Image">
@@ -201,12 +175,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a href="#">Your Site Name</a>, All Right Reserved.
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a href="https://htmlcodex.com">HTML Codex</a>
-                    <br>Distributed By: <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                    &copy; 2025 <a href="#">Rüya Trileçe</a>, Tüm Hakları Saklıdır.
                 </div>
             </div>
         </div>
@@ -215,7 +184,7 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->

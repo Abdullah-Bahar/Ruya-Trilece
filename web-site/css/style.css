@@ -610,3 +610,18 @@ h6,
 	color: var(--logo-red);
 	border: solid 1px var(--logo-red);
 }
+
+
+/*** 404 ***/
+.Not-Found .icon-404 {
+	color: var(--logo-red);
+}
+
+.Not-Found .btn-404 {
+	color: var(--light);
+	background-color: var(--logo-red);
+}
+
+.Not-Found .btn-404:hover {
+	background-color: rgba(199, 77, 76, 0.5);
+}
