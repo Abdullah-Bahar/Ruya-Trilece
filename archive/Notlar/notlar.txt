@@ -1,0 +1,47 @@
+* https://themewagon.github.io/baker/index.html#
+	- Template
+
+* https://seeklogo.com/vector-logo/
+	- Trendyol, yemek sepeti logolarını aldığım yer
+
+* https://convertimage.net/convert-a-picture/to-jpg/?s=jpg-to-jpg&i=20250516-190723-dnclu
+	- Bozuk formatlı img gösresllerini terkardan düzenlemek için
+
+* https://www.remove.bg/tr/upload
+	- Resim dosyalarını logo haline getirmek için
+	(Arkası boş foto)
+
+* https://www.fotor.com/apps/batch/
+	- Resimleri ayarlamak için
+
+* https://www.pexels.com/tr-tr/arama/trile%C3%A7e/
+* https://www.freepik.com/search?format=search&last_filter=query&last_value=trile%C3%A7e&query=trile%C3%A7e
+	- Görsel bulmak için
+
+* https://fontawesome.com/search
+* https://www.flaticon.com/search?word=trendyol
+	- Iconlar için
+
+* Thema Wagon
+* Thema Forrest
+	- Hazır template'ler
+
+
+* https://cdnjs.com/libraries/font-awesome
+	- Icon Code
+
+* https://fonts.google.com/selection/embed
+	- Font Code
+
+* https://www.youtube.com/playlist?list=PLyYHV4_axGO6JtpXtpj0GYdL0B6xSfvVg
+	- Figma ile sıfırdan web sitesi
+
+
+* Templateler
+	- https://themewagon.github.io/pizza/about.html
+	- https://themewagon.github.io/feane/
+	- https://themewagon.github.io/restoran/index.html
+	- http://lambert.kwst.net/site/onepage-vimeo.html
+	- https://html.arisezon.com/butter/demos/bakery/index.html
+	- http://preview.themeforest.net/item/sweetness-one-page-html-template/full_screen_preview/22069841?_ga=2.215668895.983592377.1746788022-865375948.1746788022
+	- https://preview.themeforest.net/item/le-cafe-bakery-cafe-wordpress-theme/full_screen_preview/20583734?_ga=2.219870737.983592377.1746788022-865375948.1746788022
