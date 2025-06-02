@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rüya Trileçe</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+	<!-- Yükleniyor (Loading) Animasyon Ksımı -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid top-bar bg-dark text-light px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 justify-content-end align-items-center d-none d-lg-flex">
+            <div class="col-lg-6 px-5 text-end">
+                <small>Bizi Takip Edin:</small>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn-lg-square pe-0" href="https://www.instagram.com/ruya.trilece/" target="_blank"><i class="fab fa-instagram btn-lg-square-topbar"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+		<a href="index.html" class="navbar-logo ms-4 ms-lg-0">
+		    <img src="img/logo.png" alt="Logo" class="navbar-logo-img">
+		</a>
+		<a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+            <h1 class="logo-text m-0">Rüya <br> Trileçe</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto p-4 p-lg-0">
+                <a href="#home" class="nav-item nav-link active">Ana Sayfa</a>
+                <a href="#about" class="nav-item nav-link">Hakımızda</a>
+                <a href="#product" class="nav-item nav-link">Ürünler</a>
+                <a href="#order" class="nav-item nav-link">Sipariş Ver</a>
+                <a href="#shops" class="nav-item nav-link">Şubeler</a>
+            </div>
+            <div class=" d-none d-lg-flex">
+                <div class="flex-shrink-0 btn-lg-square border border-light rounded-circle">
+                    <i class="fa fa-phone btn-lg-square-navbar-phone-icon"></i>
+                </div>
+                <div class="ps-3">
+                    <small class="btn-lg-square-navbar-phone-text mb-0">Bize Ulaşın</small>
+                    <p class="text-light fs-5 mb-0">+90 534 433 41 04</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+	<!-- Slider için eklenecek görseller : 1920px x 1080px,  .jpg uzantılı olmalı -->
+    <div id="home" class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-lg-8">
+                                <p class="header-carousel-p text-uppercase fw-bold mb-2">// Hayalindeki Tatlı</p>
+                                <h1 class="display-1 text-light mb-4 animated slideInDown">Bir Bizde Bir De Rüyada Görürsün</h1>
+                                <a class="btn btn-header-carousel rounded-pill py-3 px-5" href="#about">Daha Fazlası</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-lg-8">
+                                <p class="header-carousel-p text-uppercase fw-bold mb-2">// Hayalindeki Tatlı</p>
+                                <h1 class="display-1 text-light mb-4 animated slideInDown">Bir Bizde Bir De Rüyada Görürsün</h1>
+                                <a class="btn btn-header-carousel rounded-pill py-3 px-5" href="#about">Daha Fazlası</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Facts Start -->
+	<div class="container-xxl py-6">
+	    <div class="container">
+	        <div class="row g-4">
+	            <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.1s">
+	                <div class="fact-item bg-light rounded text-center h-100 p-5">
+	                    <i class="fa fa-award fact-item-icon fa-4x mb-4"></i>
+	                    <p class="mb-2">Yıllık Tecrübe</p>
+	                    <h1 class="display-5 mb-0" data-toggle="counter-up">22</h1> 
+					</div>
+	            </div>
+	            <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.3s">
+	                <div class="fact-item bg-light rounded text-center h-100 p-5">
+	                    <i class="fa fa-utensils fa-4x fact-item-icon mb-4"></i> <p class="mb-2">Günlük Taptaze Dilim</p>
+	                    <h1 class="display-5 mb-0">+<span data-toggle="counter-up">500</span></h1> 
+					</div>
+	            </div>
+	            <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.5s">
+	                <div class="fact-item bg-light rounded text-center h-100 p-5">
+	                    <i class="fa fa-users fa-4x fact-item-icon mb-4"></i> <p class="mb-2">Her Gün Mutlu Müşteri</p>
+	                    <h1 class="display-5 mb-0">+<span data-toggle="counter-up">100</span></h1> 
+					</div>
+	            </div>
+	            <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.7s">
+	                <div class="fact-item bg-light rounded text-center h-100 p-5">
+	                    <i class="fa fa-store-alt fa-4x fact-item-icon mb-4"></i> <p class="mb-2">Tedarik Edilen İşletmeler</p> 
+						<h1 class="display-5 mb-0">+<span data-toggle="counter-up">50</span></h1>
+					</div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+    <!-- Facts End -->
+
+
+    <!-- About Start -->
+    <div  id="about" class="container-xxl py-6">
+        <div class="container container-about">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="row img-twice position-relative h-100">
+                        <div class="col-6">
+                            <img class="img-fluid rounded" src="img/about-1.jpg" alt="">
+                        </div>
+                        <div class="col-6 align-self-end">
+                            <img class="img-fluid rounded" src="img/about-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100">
+                        <p class="about-text-about text-uppercase mb-2">// Hakımızda</p>
+                        <h1 class="display-6 mb-4">Rüya'ya Hoşgeldiniz...</h1>
+                        <p>Rüya Trileçe olarak, Balkanlar’ın eşsiz tatlısı trileçeyi en doğal ve taze haliyle sizlere sunuyoruz. Her gün özenle hazırladığımız tatlılarımızda kalite, hijyen ve lezzeti bir arada bulacaksınız.</p>
+                        <p>Lezzetli bir mola vermek isteyen herkesi şubelerimize ya da online sipariş sistemimize bekliyoruz. Karamelli ve frambuazlı çeşitlerimizle her damak tadına hitap ediyoruz.</p>
+                        <div class="row g-2 mb-4">
+                            <div class="col-sm-6">
+                                <i class="fa fa-check about-icon me-2"></i>Kaliteli Ürünler
+                            </div>
+                            <div class="col-sm-6">
+                                <i class="fa fa-check about-icon me-2"></i>Özel Ürünler
+                            </div>
+                            <div class="col-sm-6">
+                                <i class="fa fa-check about-icon me-2"></i>Online Sipariş
+                            </div>
+                            <div class="col-sm-6">
+                                <i class="fa fa-check about-icon me-2"></i>Eve Teslimat
+                            </div>
+                        </div>
+                        <a class="btn btn-about rounded-pill py-3 px-5" href="#product">Daha Fazlası</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Product Start -->
+    <div id="product" class="container-xxl bg-light my-6 py-6 pt-0">
+        <div class="container container-product">
+            <div class="product-top text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="product-top-text text-uppercase mb-2">// Ürünler</p>
+                <h1 class="display-6 mb-4">Rüyanızın Tatlılarını Keşfedin</h1>
+            </div>
+            <div class="row g-4 products">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <div class="text-center p-4">
+                            <div class="d-inline-block border product-border-price rounded-pill px-3 mb-3">₺50</div>
+                            <h3 class="mb-3">Karamelli Trileçe</h3>
+							<h5 class="mb-3">(Dilim)</h5>
+                            <span>El yapımı karamel sosuyla zenginleştirilmiş, enfes üç sütlü kek. Unutulmaz bir lezzet isteyenler için</span>
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid" src="img/karamelli-trilece-adet.jpg" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle" href="#order"><i class="bi bi-cart product-item-icon"></i></a>
+							</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <div class="text-center p-4">
+                            <div class="d-inline-block border product-border-price rounded-pill pt-1 px-3 mb-3">₺50</div>
+                            <h3 class="mb-3">Franbuazlı Trileçe</h3>
+							<h5 class="mb-3">(Dilim)</h5>
+                            <span>Frambuazın büyüleyici uyumu, klasik trileçenin nefis sütlü dokusuyla birleşti</span>
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid" src="img/franbuazli-tirlece-adet.jpg" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle" href="#order"><i class="bi bi-cart product-item-icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <div class="text-center p-4">
+                            <div class="d-inline-block border product-border-price rounded-pill pt-1 px-3 mb-3">50</div>
+                            <h3 class="mb-3">Çikolatalı Trileçe</h3>
+							<h5 class="mb-3">(Dilim)</h5>
+                            <span>Çikolatayla sütün eşsiz uyumunu klasik triliçenin dışarısına çıkıp denemek isteyenler için</span>
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid" src="img/cikolatali-trilece-adet.jpg" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle" href="#order"><i class="bi bi-cart product-item-icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <div class="text-center p-4">
+                            <div class="d-inline-block border product-border-price rounded-pill pt-1 px-3 mb-3">₺600 + ₺300</div>
+                            <h3 class="mb-3">Karamelli Trileçe</h3>
+							<h5 class="mb-3">(Tepsi)</h5>
+                            <span>Bana bir dilim yetmez diyenler için karamel ve sütün kusursuz dengesi</span>
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid" src="img/karamelli-trilece-tepsi.jpg" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle" href="#order"><i class="bi bi-cart product-item-icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <div class="text-center p-4">
+                            <div class="d-inline-block border product-border-price rounded-pill pt-1 px-3 mb-3">₺600 + 300</div>
+                            <h3 class="mb-3">Franbuazlı Trileçe</h3>
+							<h5 class="mb-3">(Tepsi)</h5>
+                            <span>Franbuaz ve sütün eşsiz birleşiminin tadını tek dilimde çıkarayamaylar için</span>
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid" src="img/franbuazli-tirlece-tepsi.jpg" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle" href="#order"><i class="bi bi-cart product-item-icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <div class="text-center p-4">
+                            <div class="d-inline-block border product-border-price rounded-pill pt-1 px-3 mb-3">₺600 + 300</div>
+                            <h3 class="mb-3">Çikolatalı Trileçe</h3>
+							<h5 class="mb-3">(Tepsi)</h5>
+                            <span>Çikolatayla sütün eşsiz birleşiminin tadını tek dilimde çıkarayamaylar için</span>
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid" src="img/cikolatali-trilece-tepsi.jpg" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle" href="#order"><i class="bi bi-cart product-item-icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <div class="text-center p-4">
+                            <div class="d-inline-block border product-border-price rounded-pill pt-1 px-3 mb-3">₺50</div>
+                            <h3 class="mb-3">Çilekli Magnolya</h3>
+                            <span>Özel muhallebisi ile birlikte çileğin tadını merak edenler için</span>
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid" src="img/magnolya-cilekli.jpg" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle" href="#order"><i class="bi bi-cart product-item-icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <div class="text-center p-4">
+                            <div class="d-inline-block border product-border-price rounded-pill pt-1 px-3 mb-3">₺50</div>
+                            <h3 class="mb-3">Muzlu Magnolya</h3>
+                            <span>Özel muhallebisi ile birlikte muzun tadını merak edenler için</span>
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid" src="img/magnolya-muzlu.jpg" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle" href="#order"><i class="bi bi-cart product-item-icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <div class="text-center p-4">
+                            <div class="d-inline-block border product-border-price rounded-pill pt-1 px-3 mb-3">₺50</div>
+                            <h3 class="mb-3">Çikolatalı Magnolya</h3>
+                            <span>Özel muhallebisi ile birlikte çikolatanın tadını merak edenler için</span>
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid" src="img/magnolya-cikolatali.jpg" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle" href="#order"><i class="bi bi-cart product-item-icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Product End -->
+
+	 
+    <!-- Service Start -->
+	<div class="service container-xxl py-6">
+	    <div class="container">
+	        <div class="row g-5">
+	            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+	                <p class="top-text text-uppercase mb-2">// İşletmelere Özel Hizmetler</p>
+	                <h1 class="display-6 mb-4">İşletmenize Özel Rüya Trileçe</h1>
+	                <p class="mb-5">İşletmenizin menüsünü Rüya Trileçe'nin eşsiz lezzetiyle zenginleştirin! Kafeler, restoranlar ve oteller için özel toptan tedarik çözümlerimizle, müşterilerinize unutulmaz bir tatlı deneyimi sunuyoruz.</p>
+	                <div class="row gy-5 gx-4">
+	                    <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+	                        <div class="d-flex align-items-center mb-3">
+	                            <div class="flex-shrink-0 btn-square service-icon rounded-circle me-3">
+	                                <i class="fa fa-cheese text-white"></i> 
+	                            </div>
+	                            <h5 class="mb-0">Günlük Taze Üretim</h5>
+	                        </div>
+	                    </div>
+	                    <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+	                        <div class="d-flex align-items-center mb-3">
+	                            <div class="flex-shrink-0 btn-square service-icon rounded-circle me-3">
+	                                <i class="fa fa-handshake-alt text-white"></i> 
+	                            </div>
+	                            <h5 class="mb-0">Esnek Tedarik ve Çeşitlilik</h5>
+	                        </div>
+	                    </div>
+	                    <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+	                        <div class="d-flex align-items-center mb-3">
+	                            <div class="flex-shrink-0 btn-square service-icon rounded-circle me-3">
+	                                <i class="fa fa-chart-line text-white"></i> 
+	                            </div>
+	                            <h5 class="mb-0">Özel Gün ve Etkinlik Çözümleri</h5>
+	                        </div>
+	                    </div>
+	                    <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+	                        <div class="d-flex align-items-center mb-3">
+	                            <div class="flex-shrink-0 btn-square service-icon rounded-circle me-3">
+	                                <i class="fa fa-truck-fast text-white"></i> 
+	                            </div>
+	                            <h5 class="mb-0">Hızlı ve Hijyenik Teslimat</h5>
+	                        </div>
+	                    </div>
+	                </div>
+	                <p class="service-teklif rounded-pill py-3 px-5 mt-4">Teklif Almak İçin Bize Ulaşın <span class="m-3 service-teklif">+90 534 433 41 04</span></p>
+	            </div>
+	            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+	                <div class="row img-twice position-relative h-100">
+	                    <div class="col-6">
+	                        <img class="img-fluid rounded" src="img/about-3.jpg" alt="Trileçe imalathanesi üretimi"> 
+	                    </div>
+	                    <div class="col-6 align-self-end">
+	                        <img class="img-fluid rounded" src="img/about-4.jpg" alt="Kafeye trileçe teslimatı"> 
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+    <!-- Service End -->
+
+
+    <!-- Order Start -->
+    <div id="order" class="container-xxl py-6">
+        <div class="container">
+			<div class="order-top text-light rounded-bottom p-5 my-4 mt-0 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="row g-4 align-items-center">
+					<div class="text-lg-start mb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                		<p class="order-top-text text-uppercase mb-2">// Sipariş Ver</p>
+                		<h1 class="order-top-header display-6 mb-4">Rüya'nızdaki Tatlıyı Keşfetmenize Çok Az Kaldı</h1>
+            		</div>
+					<div class="order-top-phone col-lg-6 text-lg-end">
+                        <div class="d-inline-flex align-items-center text-start">
+                            <i class="fa fa-phone-alt fa-4x flex-shrink-0"></i>
+                            <div class="ms-4">
+                                <p class="fs-5 fw-bold mb-0">Sipariş Verin</p>
+                                <p class="fs-1 fw-bold mb-0">+90 534 433 41 04</p>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+            </div> 
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-3 col-md-6 wow fadeInUp online-order-conteiner" data-wow-delay="0.1s">
+                    <div class="team-item text-center rounded overflow-hidden">
+                        <div class="logo-wrapper">
+							<img class="img-fluid online-order-logo" src="img/trendyol-yemek-logo.png" alt="">
+						</div>
+                        <div class="team-text">
+                            <div class="team-title">
+                                <h5>Trendyol</h5>
+                            </div>
+							<div class="btn">
+								<a href="https://tgoyemek.com/restoranlar/368240" target="_blank" class="team-social trendyol-logo custom-order-link">
+									Sipariş Verin
+								</a>
+							</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp online-order-conteiner" data-wow-delay="0.3s">
+                    <div class="team-item text-center rounded overflow-hidden">
+                        <div class="logo-wrapper">
+							<img class="img-fluid online-order-logo" src="img/yemek-sepeti-logo.png" alt="">
+						</div>
+                        <div class="team-text">
+                            <div class="team-title">
+                                <h5>Yemek Sepeti</h5>
+                            </div>
+							<div class="btn">
+								<a href="https://yemeksepeti.com/restaurant/e6rp/ruya-trilece" target="_blank" class="team-social custom-order-link yemeksepeti-logo">
+									Sipariş Verin
+								</a>
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Order End -->
+
+
+    <!-- Shops Start -->
+    <div id="shops" class="container-xxl bg-light my-6 py-6 pb-0">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="shops-top-text text-uppercase mb-2">// Şubeler</p>
+                <h1 class="display-6 mb-4">Rüya'nın Adresi</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item bg-white rounded p-4 branch-cart">
+                    <div class="d-flex align-items-center mb-4 justify-content-center text-center">
+                        <div class="">
+                            <h5 class="mb-1">İstanbul</h5>
+                        </div>
+                    </div>
+                    <p class="mb-0 text-center">Hayrettin Paşa Mahallesi 1089. Sokak No:2 
+						<br> Gaziosmanpaşa/istanbul
+					</p>
+                </div>
+            </div>
+            <div class="container-xxl py-6 px-0 wow fadeInUp" data-wow-delay="0.1s">
+        		<iframe id="map-frame" class="w-100 mb-n2" style="height: 450px;"
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.652164907819!2d28.88403997551748!3d41.07659531521619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab10045ad4d03%3A0xab37001ac565cb1!2zUsO8eWEgVHJpbGXDp2U!5e0!3m2!1str!2str!4v1747937171239!5m2!1str!2str"
+            	frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    		</div>
+        </div>
+    </div>
+    <!-- Shops End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer my-6 mb-0 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">İletişim</h4>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+90 534 433 41 04</p>
+                    <!-- <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p> -->
+                    <div class="d-flex pt-2">
+                        <!-- <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a> -->
+                        <!-- <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a> -->
+                        <!-- <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-youtube"></i></a> -->
+                        <!-- <a class="btn btn-square btn-outline-light rounded-circle me-0" href=""><i class="fab fa-linkedin-in"></i></a> -->
+                        <a class="btn btn-square btn-social-link btn-outline-light rounded-circle me-0" target="_blank" href="https://www.instagram.com/ruya.trilece/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Hızlı Menü</h4>
+                    <a class="btn btn-link" href="#home">Ana Sayfa</a>
+                    <a class="btn btn-link" href="#about">Hakkımızda</a>
+                    <a class="btn btn-link" href="#product">Ürünler</a>
+                    <a class="btn btn-link" href="#order">Sipariş Ver</a>
+                    <a class="btn btn-link" href="#shops">Şubeler</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Ürünler</h4>
+                    <a class="btn btn-link" href="#product">Karamelli Trileçe</a>
+                    <a class="btn btn-link" href="#product">Franbuazlı Trileçe</a>
+                    <a class="btn btn-link" href="#product">Çikoaltalı Trileçe</a>
+                    <a class="btn btn-link" href="#product">Çilekli Magnolya</a>
+                    <a class="btn btn-link" href="#product">Muzlu Magnolya</a>
+                    <a class="btn btn-link" href="#product">Çikoaltalı Magnolya</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Fotoğraf Galerisi</h4>
+                    <div class="row g-2">
+                        <div class="col-4">
+                            <img class="img-fluid bg-light rounded p-1" src="img/franbuazli-tirlece-adet.jpg" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light rounded p-1" src="img/karamelli-trilece-adet.jpg" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light rounded p-1" src="img/cikolatali-trilece-adet.jpg" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light rounded p-1" src="img/magnolya-muzlu.jpg" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light rounded p-1" src="img/magnolya-cilekli.jpg" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light rounded p-1" src="img/magnolya-cikolatali.jpg" alt="Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; 2025 <a href="#">Rüya Trileçe</a>, Tüm Hakları Saklıdır.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
