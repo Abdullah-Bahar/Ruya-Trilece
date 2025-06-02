@@ -526,8 +526,11 @@ h6,
 
 .testimonial-carousel .owl-nav {
     margin-top: 30px;
-    display: flex;
+	display: flex !important;
     justify-content: center;
+	visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
 }
 
 .testimonial-carousel .owl-nav .owl-prev,
