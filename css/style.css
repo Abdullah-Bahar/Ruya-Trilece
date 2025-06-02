@@ -173,7 +173,7 @@ h6,
     left: 0;
     display: flex;
     align-items: center;
-    background: rgba(0, 0, 0, .3);
+    background: rgba(0, 0, 0, .5);
 }
 
 @media (max-width: 768px) {
@@ -526,11 +526,8 @@ h6,
 
 .testimonial-carousel .owl-nav {
     margin-top: 30px;
-    display: flex !important;
+    display: flex;
     justify-content: center;
-	visibility: visible !important;
-    opacity: 1 !important;
-    height: auto !important;
 }
 
 .testimonial-carousel .owl-nav .owl-prev,
