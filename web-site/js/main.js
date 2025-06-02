@@ -68,13 +68,13 @@
         autoplay: false,
         smartSpeed: 1000,
         margin: 25,
-        loop: false,
+        loop: true,
         center: true,
         dots: false,
         nav: true,
-		mouseDrag: false,   // << Bu satırı ekleyin veya false yapın
-    	touchDrag: false,   // << Bu satırı ekleyin veya false yapın (dokunmatik ekranlar için)
-        navText : [
+		mouseDrag: false, 
+    	touchDrag: true, 
+	    navText : [
             '<i class="bi bi-chevron-left"></i>',
             '<i class="bi bi-chevron-right"></i>'
         ],
@@ -93,7 +93,6 @@
 
 
 	// Shops map change
-	/*
     $(document).ready(function () {
         var currentMap = ""; // Aynı harita tekrar yüklenmesin
 
@@ -128,7 +127,7 @@
             }
         }
     });
-	*/
+	
 
 
 	// Navbar avtive, hover
