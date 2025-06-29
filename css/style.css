@@ -200,7 +200,7 @@ h6,
 
 /* Reklam görselinin masaüstü ve genel stil ayarları */
 .trilece-reklam-wrapper {
-    position: absolute; /* Mutlaka absolute olmalı */
+    position: absolute;
     max-width: 300px; /* Masaüstü boyutu */
     height: auto;
     filter: drop-shadow(0px 0px 8px rgba(0,0,0,0.4));
@@ -267,7 +267,7 @@ h6,
 	.header-carousel .owl-carousel-inner .container h1 {
 		font-size: 2.5rem !important;
 	}
-
+	
 }
 
 .header-carousel .owl-nav {
