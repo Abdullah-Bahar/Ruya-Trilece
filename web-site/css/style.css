@@ -176,22 +176,98 @@ h6,
     background: rgba(0, 0, 0, .5);
 }
 
+/* Metinlerin sola hizalanması için bu kısmı değiştiriyoruz */
+.header-carousel .owl-carousel-inner .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Dikeyde ortalama kalacak */
+    height: 100%;
+    width: 100%;
+    position: relative; /* Önemli: trilece-reklam-wrapper'ın göreceli konumlanması için */
+}
+
+.header-carousel .owl-carousel-inner .container .row {
+    width: 100%;
+    justify-content: flex-start; /* İçerideki col'u sola hizalamak için */
+}
+
+.header-carousel .owl-carousel-inner .container .col-lg-8 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Metni ve butonu sola hizala */
+    text-align: left; /* Metni sola hizala */
+}
+
+/* Reklam görselinin masaüstü ve genel stil ayarları */
+.trilece-reklam-wrapper {
+    position: absolute;
+    max-width: 300px; /* Masaüstü boyutu */
+    height: auto;
+    filter: drop-shadow(0px 0px 8px rgba(0,0,0,0.4));
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    /* background-color: rgba(255, 0, 0, 0.2);  /* DEBUGGING: Masaüstü konumu görmek için */
+    z-index: 10;
+}
+
+.trilece-reklam-img {
+    max-width: 100%; /* Kapsayıcısına göre boyutlanmasını sağla */
+    height: auto;
+    filter: drop-shadow(0px 0px 8px rgba(0,0,0,0.4)); /* Görseldeki gölge efekti */
+}
+
+
 @media (max-width: 768px) {
-    .header-carousel .owl-carousel-item {
-        position: relative;
-        min-height: 600px;
+	
+	.header-carousel .owl-carousel-item	{
+		position: relative;
+		min-height: 600px;
+	}
+	
+	.header-carousel .owl-carousel-item img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.header-carousel .owl-carousel-item p {
+		font-size: 16px !important;
+	}
+
+	/* BURADA trilece-reklam-wrapper SINIFI MOBİL GÖRÜNÜM İÇİN YENİDEN TANIMLANIYOR */
+	.trilece-reklam-wrapper {
+		position: absolute !important; /* JavaScript'i geçersiz kılmak için !important */
+		/* max-width: 120px !important; /* Görselin mobil boyutu */
+		width: 40% !important; /* Kapsayıcı kutunun genişliği */
+		height: 30% !important; /* Kapsayıcı kutunun yüksekliği */
+		right: 2% !important; /* Sağdan mesafe */
+		bottom: 7% !important; /* Alttan mesafe */
+		top: auto !important; /* Masaüstündeki 'top: 50%;' ayarını geçersiz kıl */
+		transform: translateY(0%) !important; /* Masaüstündeki 'transform: translateY(-50%);' ayarını geçersiz kıl */
+		/* background-color: rgba(0, 255, 0, 0.4) !important; /* DEBUGGING: Mobil konumu görmek için */
+		z-index: 10; /* Diğer elementlerin üzerinde görünmesi için */
+	}
+
+    /* *** BURAYA YENİ EKLENECEK KOD (trilece-reklam-img) *** */
+    .trilece-reklam-img {
+        display: block !important; /* Görselin kapsayıcıyı doldurması için */
+        width: 100% !important; /* Kapsayıcı genişliğinin %100'ünü kullan */
+        height: 100% !important; /* Kapsayıcı yüksekliğinin %100'ünü kullan */
+        object-fit: contain !important; /* Görseli, oranını koruyarak kutuya sığdır */
+        /* Alternatif: object-fit: cover !important; // Görseli oranını koruyarak kutuyu tamamen doldur, bazı kısımlar kesilebilir */
     }
 
-    .header-carousel .owl-carousel-item img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+	.header-carousel .owl-carousel-inner .container .col-lg-8 {
+		text-align: left; /* Mobil görünümde de metni sola hizala */
+		align-items: flex-start; /* Mobil görünümde de metni ve butonu sola hizala */
+	}
 
-    .header-carousel .owl-carousel-item p {
-        font-size: 16px !important;
-    }
+	.header-carousel .owl-carousel-inner .container h1 {
+		font-size: 2.5rem !important;
+	}
+	
 }
 
 .header-carousel .owl-nav {
@@ -236,18 +312,18 @@ h6,
 }
 
 .header-carousel-p {
-	color: var(--logo-blue);
+    color: var(--logo-blue);
 }
 
 .header-carousel .btn-header-carousel {
-	background-color: var(--logo-blue);
-	color: var(--light);
+    background-color: var(--logo-blue);
+    color: var(--light);
 }
 
 .header-carousel .btn-header-carousel:hover {
-	color: rgba(253, 245, 235, 0.7);
-	/* background-color: rgba(255, 255, 255, 0.6); */
-	--logo-blue: rgba(18, 48, 76, 0.5);
+    color: rgba(253, 245, 235, 0.7);
+    /* background-color: rgba(255, 255, 255, 0.6); */
+    --logo-blue: rgba(18, 48, 76, 0.5);
 }
 
 
@@ -366,6 +442,38 @@ h6,
 	color: var(--logo-red);
 }
 
+#product .product-item .product-price-text {
+	font-size: 35px;
+	color: var(--logo-red);
+}
+
+#product .product-item .product-price-tepsi-depozito-text {
+	font-size: 22px;
+	color: var(--logo-red);
+}
+
+#product .product-item:hover .product-price-text{
+	color: var(--logo-red);
+	background-color: var(--light);
+}
+
+#product .product-item:hover .product-price-tepsi-depozito-text {
+	color: var(--light);
+}
+
+#product .product-toptan h1 {
+	color: var(--logo-red);
+	font-size: 55px;
+}
+
+@media (max-width: 992px) {
+	
+	#product .product-toptan h1 {
+		font-size: 40px;
+		text-align: center;
+	}
+
+}
 
 /*** Service ***/
 .service .top-text {
